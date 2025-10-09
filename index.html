@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard KPIs - Login con DNI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-form" class="container">
+        <h1>Bienvenido al Dashboard de KPIs</h1>
+        <form id="dni-form">
+            <label for="dni-input">DNI:</label>
+            <input type="text" id="dni-input" placeholder="Ingrese su DNI" required maxlength="3">
+            <button type="submit">Ingresar</button>
+        </form>
+        <p id="error-msg" style="color: red; display: none;">DNI inválido o no autorizado.</p>
+    </div>
+
+    <div id="dashboard" class="container" style="display: none;">
+        <h1>Dashboard de KPIs</h1>
+        <button id="logout">Salir</button>
+        <div id="kpis">
+            <!-- KPIs se cargarán aquí dinámicamente -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
