@@ -1,6 +1,6 @@
 body {
-    font-family: 'Calibri', sans-serif; /* Fuente Calibri como pediste */
-    background-color: black; /* Fondo negro */
+    font-family: 'Calibri', sans-serif; /* Fuente Calibri */
+    background-color: black; /* Fondo negro general */
     color: white; /* Texto blanco para contraste */
     margin: 0;
     padding: 20px;
@@ -10,7 +10,7 @@ body {
 .container {
     max-width: 600px;
     margin: 50px auto; /* Espaciado para que "flote" */
-    background: rgba(255, 255, 255, 0.95); /* Fondo blanco semi-transparente */
+    background: rgba(255, 255, 255, 0.95); /* Fondo blanco semi-transparente para LOGIN */
     color: black; /* Texto negro dentro del contenedor */
     padding: 30px;
     border-radius: 12px;
@@ -20,7 +20,13 @@ body {
         0 10px 30px rgba(0, 0, 0, 0.3), /* Sombra oscura para más 3D */
         inset 0 1px 0 rgba(255, 255, 255, 0.8); /* Brillo interno */
     transform: translateZ(20px) rotateX(2deg); /* Efecto 3D: avanza y leve inclinación */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suave al cambiar vistas y glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Suave al cambiar vistas y fondos */
+}
+
+/* Estilo específico para el dashboard (KPIs) */
+#dashboard .container {
+    background: #B4BDCC; /* Fondo gris azulado claro donde se muestran los KPIs */
+    color: black; /* Texto negro para legibilidad */
 }
 
 .container:hover {
@@ -92,16 +98,16 @@ button:hover {
 }
 
 .kpi {
-    background: rgba(0, 191, 255, 0.1); /* Fondo sutil neón azul para KPIs */
+    background: #546380; /* Fondo gris azulado oscuro para cada KPI */
     padding: 15px;
     margin: 10px 0;
     border-radius: 6px;
-    border-left: 4px solid #00BFFF; /* Borde neón azul */
-    color: #7FFFD4; /* Texto celeste agua para KPIs */
+    border-left: 4px solid #00BFFF; /* Borde neón azul para resaltar */
+    color: #000000; /* Todo el texto de KPIs en NEGRO para legibilidad */
 }
 
 .kpi strong {
-    color: #00BFFF; /* Strong en neón azul, pero celeste agua general */
+    color: #081733; /* Labels como RMD: en azul oscuro #081733 */
 }
 
 #error-msg {
