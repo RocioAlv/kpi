@@ -111,6 +111,28 @@ button:hover {
     color: #081733; /* Letra de los KPIs (labels): azul oscuro #081733 */
 }
 
+/* Nuevo estilo para el recuadro del supervisor (discreto y pequeño) */
+.supervisor-link {
+    background: white; /* Fondo blanco sutil, como KPIs */
+    padding: 10px; /* Padding mínimo para que sea chiquito */
+    margin-top: 20px; /* Espacio arriba de los KPIs */
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px; /* Fuente más chica para discreción */
+    color: #111112; /* Texto en gris oscuro */
+    border-left: 2px solid #00BFFF; /* Borde neón sutil, más delgado */
+}
+
+.supervisor-link a {
+    color: #081733; /* Enlace en azul oscuro */
+    text-decoration: none; /* Sin subrayado por defecto */
+    font-weight: bold;
+}
+
+.supervisor-link a:hover {
+    text-decoration: underline; /* Subrayado al hover para indicar clic */
+}
+
 #error-msg {
     color: #dc3545 !important; /* Rojo para error, override */
     text-align: center;
