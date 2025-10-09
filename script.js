@@ -1,19 +1,16 @@
 // Simulación de base de datos con 5 DNIs de ejemplo (edita aquí para personalizar)
 const usuariosAutorizados = {
     '111': { 
-        nombre: 'Juan Riquelme', 
+        nombre: 'Juan Pérez', 
         kpis: { 
-            rmd: '0', 
+            rmd: '95%', 
             ocupacionBodega: '80%', 
             excesosVelocidad: '5 incidentes', 
-            AdherenciaChecklist: '70%',
-            ComportamientosInseguros: 'No detectados',
-            TLP: '29,11',
             ausentismo: '2%' 
         } 
     },
     '222': { 
-        nombre: 'Ludueña Gastón', 
+        nombre: 'María López', 
         kpis: { 
             rmd: '85%', 
             ocupacionBodega: '90%', 
@@ -22,7 +19,7 @@ const usuariosAutorizados = {
         } 
     },
     '333': { 
-        nombre: 'Acosta, Gaston', 
+        nombre: 'Carlos García', 
         kpis: { 
             rmd: '92%', 
             ocupacionBodega: '75%', 
@@ -31,7 +28,7 @@ const usuariosAutorizados = {
         } 
     },
     '444': { 
-        nombre: 'Verdera David', 
+        nombre: 'Ana Martínez', 
         kpis: { 
             rmd: '70%', 
             ocupacionBodega: '95%', 
