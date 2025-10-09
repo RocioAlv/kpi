@@ -137,3 +137,7 @@ button:hover {
     color: #dc3545 !important; /* Rojo para error, override */
     text-align: center;
 }
+#error-msg {
+    color: #dc3545 !important; /* Rojo para error, override */
+    text-align: center;
+}
