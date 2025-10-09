@@ -3,9 +3,11 @@ const usuariosAutorizados = {
     '111': { 
         nombre: 'Juan Riquelme', 
         kpis: { 
-            rmd: '95%', 
+            rmd: '0', 
             ocupacionBodega: '80%', 
             excesosVelocidad: '5 incidentes', 
+            AdherenciaChecklist: '70%',
+            ComportamientosInseguros: 'No detectados',
             ausentismo: '2%' 
         } 
     },
