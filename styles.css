@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Calibri', sans-serif; /* Fuente Calibri como pediste */
     background-color: black; /* Fondo negro */
     color: white; /* Texto blanco para contraste */
     margin: 0;
@@ -15,15 +15,21 @@ body {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 
-        0 0 20px rgba(255, 255, 255, 0.5), /* Sombra blanca/glow detrás para efecto 3D */
-        0 10px 30px rgba(0, 0, 0, 0.3), /* Sombra oscura para profundidad */
+        0 0 20px #00BFFF, /* Sombra neón azul intensa para glow atrás */
+        0 0 40px #00BFFF, /* Más neón para profundidad 3D */
+        0 10px 30px rgba(0, 0, 0, 0.3), /* Sombra oscura para más 3D */
         inset 0 1px 0 rgba(255, 255, 255, 0.8); /* Brillo interno */
     transform: translateZ(20px) rotateX(2deg); /* Efecto 3D: avanza y leve inclinación */
-    transition: transform 0.3s ease; /* Suave al cambiar vistas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suave al cambiar vistas y glow */
 }
 
 .container:hover {
     transform: translateZ(30px) rotateX(0deg); /* Más 3D al hover */
+    box-shadow: 
+        0 0 30px #00BFFF, /* Intensifica neón al hover */
+        0 0 60px #00BFFF,
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 h1 {
@@ -47,6 +53,15 @@ input {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Suave cambio al focus */
+}
+
+input:focus {
+    background-color: #00BFFF; /* Fondo azul neón cuando completas/tipeas DNI */
+    color: white; /* Texto blanco para contraste en neón */
+    border-color: #00BFFF;
+    box-shadow: 0 0 10px #00BFFF; /* Glow neón alrededor del input */
+    outline: none; /* Quita outline por defecto */
 }
 
 button {
@@ -58,6 +73,7 @@ button {
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -76,15 +92,16 @@ button:hover {
 }
 
 .kpi {
-    background: rgba(0, 123, 255, 0.1); /* Azul claro para KPIs */
+    background: rgba(0, 191, 255, 0.1); /* Fondo sutil neón azul para KPIs */
     padding: 15px;
     margin: 10px 0;
     border-radius: 6px;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #00BFFF; /* Borde neón azul */
+    color: #7FFFD4; /* Texto celeste agua para KPIs */
 }
 
 .kpi strong {
-    color: #007bff;
+    color: #00BFFF; /* Strong en neón azul, pero celeste agua general */
 }
 
 #error-msg {
