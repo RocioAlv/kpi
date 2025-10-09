@@ -8,6 +8,7 @@ const usuariosAutorizados = {
             excesosVelocidad: '5 incidentes', 
             AdherenciaChecklist: '70%',
             ComportamientosInseguros: 'No detectados',
+            TLP: '29,11',
             ausentismo: '2%' 
         } 
     },
