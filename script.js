@@ -75,6 +75,10 @@ document.getElementById('dni-form').addEventListener('submit', function(e) {
             <div class="kpi">
                 <strong>AUSENTISMO:</strong> ${user.kpis.ausentismo}
             </div>
+            <!-- Nuevo recuadro discreto para supervisor -->
+            <div class="supervisor-link">
+                <p>Ante dudas, clickee aquí para hablar con supervisor: <a href="https://wa.me/5493364110938" target="_blank">📱 WhatsApp</a></p>
+            </div>
         `;
     } else {
         errorMsg.style.display = 'block';
