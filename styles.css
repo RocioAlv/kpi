@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco para contraste */
+    margin: 0;
+    padding: 20px;
+    perspective: 1000px; /* Para efecto 3D global */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto; /* Espaciado para que "flote" */
+    background: rgba(255, 255, 255, 0.95); /* Fondo blanco semi-transparente */
+    color: black; /* Texto negro dentro del contenedor */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.5), /* Sombra blanca/glow detrás para efecto 3D */
+        0 10px 30px rgba(0, 0, 0, 0.3), /* Sombra oscura para profundidad */
+        inset 0 1px 0 rgba(255, 255, 255, 0.8); /* Brillo interno */
+    transform: translateZ(20px) rotateX(2deg); /* Efecto 3D: avanza y leve inclinación */
+    transition: transform 0.3s ease; /* Suave al cambiar vistas */
+}
+
+.container:hover {
+    transform: translateZ(30px) rotateX(0deg); /* Más 3D al hover */
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: black;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#logout {
+    width: auto;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    background-color: #dc3545;
+}
+
+#logout:hover {
+    background-color: #c82333;
+}
+
+.kpi {
+    background: rgba(0, 123, 255, 0.1); /* Azul claro para KPIs */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border-left: 4px solid #007bff;
+}
+
+.kpi strong {
+    color: #007bff;
+}
+
+#error-msg {
+    color: #dc3545 !important; /* Rojo para error, override */
+    text-align: center;
+}
