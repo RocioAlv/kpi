@@ -4,7 +4,7 @@ body {
     color: white; /* Texto blanco para contraste general */
     margin: 0;
     padding: 20px;
-    perspective: 1000px; /* Para efecto 3D global */
+    perspective: 3000px; /* Para efecto 3D global */
 }
 
 .container {
